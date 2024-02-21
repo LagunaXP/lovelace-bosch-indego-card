@@ -9,7 +9,7 @@
     var INDEGO_SENSOR_START = "";
     var INDEGO_SERIAL = "";
     var INDEGO_IDENT = "";
-    const UNKNOWN = "unknown";
+    const UNKNOWN = "unbekannt";
     const INDEGO_SERVICE = "indego.command";
     
     const state = {
@@ -40,14 +40,14 @@
             entity_suffix: "mowing_mode",
             entity: '',
             key: 'mow_mode',
-            label: 'Mow Mode: ',
+            label: 'Mähmodus: ',
             unit: '',
         },
         next_mow: {
             entity_suffix: "next_mow",
             entity: '',
             key: 'next_mow',
-            label: 'Next Mow: ',
+            label: 'Nächstes Mähen: ',
             unit: ' ',
             isDate: true
         },
@@ -55,7 +55,7 @@
             entity_suffix: "last_completed",
             entity: '',
             key: 'last_completed',
-            label: 'Last mow completed: ',
+            label: 'Zuletzt abgeschlossen: ',
             unit: ' ago',
             isDate: true
         },
@@ -63,7 +63,7 @@
             entity_suffix: "runtime_total",
             entity: '',
             key: 'mowtime_total',
-            label: 'MowTime total: ',
+            label: 'Mähzeit insgesamt: ',
             unit: ' h',
         },
     };
@@ -86,7 +86,7 @@
             },
         },
         return: {
-            label: 'Return to dock',
+            label: 'Zurück zum Dock',
             icon: 'mdi:home-map-marker',
             service: INDEGO_SERVICE,
             service_data: {
